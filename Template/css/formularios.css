@@ -1,0 +1,68 @@
+/*
+###############################################################
+###############################################################
+###		Todos os Direitos Reservados a GunzCore				###
+###		Produtores: Welliton  e Erick 						###
+###		Contatos:wvg_007@hotmail.com						###
+###				 erick@hotmail.com							###
+###############################################################
+###############################################################
+*/
+/* formulario de login */
+#obrigatorio {
+	color:#F00;
+	font-size:10px;
+}
+.login_div{
+	width:180px;
+	height:auto;
+	float:left;
+	padding:2px;
+}
+.logar {
+	background-image:url(../images/bg_page.jpg);
+	border:1px solid #666;
+	font-size:14px;
+	color:#333;
+	width:160px;
+	height:auto;
+	padding:10px;
+	margin-top:5px;
+        text-align: center;
+}
+.logar:hover{
+	background-color:#F8F8F8;
+	color:#666;
+}
+
+.go {
+	background:transparent;
+	background-image: url(../images/bg_menu-ho.jpg);
+	border:1px dashed #666;
+	font-size:auto;
+	color:#fff;
+	font-weight:bolder;
+	width:auto;
+	height:auto;
+	padding:5px;
+	margin-top:5px;
+}
+/* Formulario de Registro */
+.registro_left{ width: 400px; height:auto; margin:auto; float:left; margin-top:10px;}
+.registro_right{ width: 240px; height:auto; margin:18px auto; float:left;  padding:8px; background-color:#F5F5F5; border:1px solid #CCC;}
+.reg_left_div { width:380px; margin:2px; float:left; }
+.box_registro {
+	background-color:#F8F8F8;
+	border:1px solid #666;
+	font-size:14px;
+	color:#333;
+	width:340px;
+	height:auto;
+	padding:5px;
+	margin-top:5px;
+
+}
+.box_registro:hover{
+	background-color:#F5F5F5;
+	color:#666;
+}

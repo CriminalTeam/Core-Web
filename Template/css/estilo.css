@@ -1,0 +1,284 @@
+/*
+ESTRUTURA BASICA DO SITE , PAGINA INICIAL E ALGUMAS OUTRAS COISINHAS
+*/
+/* RESETE BASICO */
+
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+		margin: 0;
+		padding: 0;
+		border: 0;
+		font-size: 100%;
+		font: inherit;
+		vertical-align: baseline;
+		list-style:none; 
+		
+}
+/* Hack de Css (Floats e outros ) */
+
+.break { clear:both;}
+/* Body , Html */
+body {
+	background-image:url(../images/bg_pagina.jpg);
+	background-repeat:no-repeat;
+	background-position:top;
+	background-attachment: fixed;
+	background-color:#333;
+	font:15px Verdana, Geneva, sans-serif;
+	color:#000;
+	text-align:left;
+	margin:auto;
+}
+/* Efeitos em Geral ( Principal efeitos em links  */
+.float { float:left; padding:5px;}
+
+a{
+	outline:none; 
+	-webkit-transition: all 0.3s ease-in-out;  /* Saf3.2+, Chrome */
+	-moz-transition: all 0.3s ease-in-out;  /* FF4+ */
+	-ms-transition: all 0.3s ease-in-out;  /* IE10? */
+	-o-transition: all 0.3s ease-in-out;  /* Opera 10.5+ */
+	transition: all 0.3s ease-in-out;
+}
+a:link {text-decoration: none; color:#000;} 
+a:visited {text-decoration: none;color: #000;}	
+a:hover {text-decoration: none;color: #666;}
+a:active {text-decoration: none;color: #000;}
+strong { font-weight:bold;}	
+h3 { color:#333; font:14px Arial, Helvetica, sans-serif; text-shadow:1px 1px 1px white; font-size:100%}
+h4 { color:#333; font:12px  Verdana, Geneva, sans-serif; }
+h5 { color:#333; font:14px  Verdana, Geneva, sans-serif; text-shadow:1px 1px 1px #FFF; font-weight:700;}
+h6 { color:#999; font:12px  Verdana, Geneva, sans-serif; text-shadow:1px 1px 1px #FFF; font-weight:700;}
+/* Estruturas */
+.principal {
+	width:auto;
+	height:auto;
+	margin:auto;
+}
+.sub_principal{
+	width:900px;
+	height:auto;
+	margin:auto;
+	margin-top:10px;
+	margin-bottom:10px;
+	padding:10px;
+	background-color:#fff;
+	border-radius:10px 10px 10px 10px;
+	-moz-border-radius:10px 10px 10px 10px;
+	-webkit-border-radius:10px 10px 10px 10px;
+	box-shadow:0px 0px 20px 3px #333;
+}
+.header {
+	width:900px;
+	height:200px;
+	margin:auto;
+	background-image: url(../images/header.png);
+	border-radius:10px 10px 0px 0px;
+	-moz-border-radius:10px 10px 0px 0px;
+	-webkit-border-radius:10px 10px 0px 0px;
+}
+.banner2 {float:left;}
+/* Menu */
+.menu_bg {
+	width:900px;
+	height:40px;;
+	background-image: url(../images/bg_menu.jpg);
+	
+}
+ul#menu{
+	width:auto;
+	height:auto;
+	margin:auto;
+	text-align:center;
+}
+ul#menu li{
+	position:relative;
+	float:left;
+}
+ul#menu li a {
+	display:block;
+	float:left;
+	padding:11px;
+	height:auto;
+	width:106px;
+	color:#FFF;	
+	
+}
+ul#menu li a:hover {
+	background-image:url(../images/bg_menu-ho.jpg);
+	color:#fff;	
+}
+/* Efeitos nos Subs menus */
+ul#menu li ul {
+	z-index:10;
+	display:none;
+	position:absolute;
+	top:40px;
+	background-color:#EEE;
+	left:-1px;
+	border:solid 1px #CCC;
+	opacity:0.9;
+	border-radius:0px 0px 5px 5px;
+	-moz-border-radius:0px 0px 5px 5px;
+	-webkit-border-radius:0px 0px 5px 5px;
+}
+ul#menu li:hover ul {
+	display:block;
+
+}
+ul#menu li ul a{
+	text-align:left;
+	height:auto;
+	min-width:100px;
+	color:#000;
+}
+
+/* Segunda Estrutura do Site */
+.estrutura_page {
+	
+	width:900px;
+	height:auto;
+	margin:auto;
+}
+/* LADO esquerdo ESTRUTURAS */
+.left_page {
+	margin-top:10px;
+	width:200px;
+	height:auto;
+	float:left;
+	margin-right:5px;
+	
+	
+}
+.cat_painel {
+	width:190px;
+	height:auto;
+	float:left;
+	background-image:url(../images/bg_cats.jpg);
+	padding:5px;
+	border:1px solid #E9E9E9;
+	border-bottom:none;
+	border-radius:5px 0px 0px 0px;
+	-moz-border-radius:5px 0px 0px 0px;
+	-webkit-border-radius:5px 0px 0px 0px;
+}
+.cat_painel_sub {
+	width:190px;
+	height:auto;
+	float:left;
+	background-color:#fff;
+	padding:5px;
+	border:1px solid #E9E9E9;
+	margin-bottom:5px;
+	border-radius:0px 0px 0px 5px;
+	-moz-border-radius:0px 0px 0px 5px;
+	-webkit-border-radius:0px 0px 0px 5px;
+}
+/*Status */
+#cat_quadrados{
+	font-size:10px;	
+}
+ul#cat_quadrados li {
+	margin:5px;
+	list-style:inside;
+	list-style-image: url(../images/list-arrow.png);
+}
+.online { color:#0C3;}
+.offline { color:#F00;}
+/*Status */
+/* LADO Direito ESTRUTURAS */
+.right_page {
+	margin-top:10px;
+	width:690px;
+	height:auto;
+	float:left;
+}
+.central_cat {
+	width:690px;
+	height:auto;
+	float:left;
+	border:1px solid #E9E9E9;
+	border-radius:0px 5px 5px 0px;
+	-moz-border-radius:0px 5px 5px 0px;
+	-webkit-border-radius:0px 5px 5px 0px;
+	margin-bottom:5px;
+}
+.all_central {
+	width:680px;
+	padding:5px;
+	height:auto;
+	background-color:#F4F4F4;
+}
+.central_tit {
+	width:660px;
+	padding:8px;
+	margin:2px;
+	height:auto;
+	float:left;
+	background-image:url(../images/bg_topnav.png);
+	border:1px solid #D7D7D7;
+
+}
+.central_sub_tit {
+	width:660px;
+	padding:8px;
+	margin:2px;
+	height:auto;
+	float:left;
+	border:1px solid #D7D7D7;
+	background-color:#f9f9f9;
+}
+#listagens {
+	position:relative;
+	left:20px;
+	margin:2px;
+	list-style-type: square;
+	list-style-position: outside;
+	list-style-image: url(../images/list-arrow.png);
+}
+
+/* Parte do clã war */
+.cla_atk {
+	background-image:url(../images/x_team.jpg);
+	width:660px;
+	height:100px;
+	float:left;
+}
+.img_cla { 
+	width:60px;
+	height:60px;
+	position: relative; 
+	left:200px;
+	top:15px;
+	background-color:#333;
+	padding:5px;
+	float:left;
+}
+.img_cla_2{ 
+	float:right;
+	width:60px;
+	height:60px;
+	position: relative; 
+	right:200px;
+	top:15px;
+	background-color:#333;
+	padding:5px;
+}
+.cla_texto {
+	width:200px;
+	height:30px;
+	position: relative; 
+	left:-20px;
+	top:35px;
+	padding:5px;
+	float:left;
+}
+.cla_texto_2 {
+	width:200px;
+	height:30px;
+	position: relative; 
+	right:-20px;
+	top:35px;
+	padding:5px;
+	float:right;
+	text-align:right;
+}
